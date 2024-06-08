@@ -1,3 +1,8 @@
+body {
+    background-color: black;
+    color: white;
+}
+
 .selfie {
     width: 150px;
     border-radius: 50%;
@@ -27,4 +32,21 @@
 
 .column-3 {
     width: 50%;
+}
+
+.aboutCard {
+    background-color: black;
+    justify-content: center;
+    width: 50%;
+    margin-top: 2em;
+}
+
+input {
+    background-color: black;
+    border-color: white;
+    color: white;
+  }
+
+.formButton {
+    justify-content: center;
 }
