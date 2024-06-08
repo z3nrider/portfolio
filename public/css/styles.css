@@ -1,3 +1,30 @@
 .selfie {
-    width: 64px;
+    width: 150px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+}
+
+.homePhotoHeader {
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.contentHeader {
+    align-self: center;
+}
+
+.myTable {
+    border: 1px solid white;
+}
+
+.column-1 {
+    width: 20%;
+}
+
+.column-2 {
+    width: 30%;
+}
+
+.column-3 {
+    width: 50%;
 }
