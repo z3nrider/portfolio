@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <%- include('partials/headMeta') %>
   <title>My Portfolio Website</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
 </head>
 <body>
   <%- include('partials/header') %>
   <div class="container mt-4">
-    <h1>Welcome to My Website</h1>
-    <p>This is my portfolio page to demonstrate my web development skills</p>
+    <div class="row">
+      <div class="col-4"><img class="selfie" src="./public/img/photo.jpg" alt="A photo of Brandon Koehler">
+        <div>
+          Welcome to My Website
+        </div>
+      </div>
+    </div>
     <table class="table table-hover">
       <thead>
         <tr>
           <th scope="col">#</th>
           <th scope="col">Projects</th>
-          <th scope="col">Skills</th>
-          <th scope="col">Testimonials</th>
+          <th scope="col">Description</th>
+          <th scope="col">Contributors</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <th scope="row">1</th>
-          <td>Include a brief description of each project, the technologies used, and your role in the project</td>
-          <td>Example Project 1</td>
-          <td>Example Project 2</td>
+          <td>
+            <a class="nav-link" href="https://jammate-6aiy3r5blq-uw.a.run.app/">JamMate</a>
+          </td>
+          <td>A social media site for musicians to share their creations and thoughts with others</td>
+          <td>Brandon Koehler, Jeannette Schaadhardt, Kevin Johnson</td>
         </tr>
         <tr>
           <th scope="row">2</th>
