@@ -27,7 +27,6 @@ app.post('/contact', (req, res) => {
     myMail.main(req,res);
     res.redirect('/contact');
   };
-
   res.redirect('/contact');
 });
 

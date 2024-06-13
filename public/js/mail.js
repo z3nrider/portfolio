@@ -13,7 +13,7 @@ function main(req, res) {
         from: req.body.email,
         to: 'bkoehler2012@gmail.com',
         subject: req.body.subject,
-        text: req.body.comment
+        text: `${req.body.comment}, -from ${req.body.email}`
       };
 
       transporter.sendMail(mailOptions, function(error, info){
