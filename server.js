@@ -2,6 +2,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const nodeMailer = require('nodemailer');
 const app = express();
+var nodemailer = require('nodemailer');
+const myMail = require('./public/js/mail');
 
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
@@ -21,7 +23,12 @@ app.get('/contact', (req, res) => {
 });
 
 app.post('/contact', (req, res) => {
-  res.send(req.body);
+  if (myMail.validate(req, res)) {
+    myMail.main(req,res);
+    res.redirect('/contact');
+  };
+
+  res.redirect('/contact');
 });
 
 const port = process.env.PORT || 3000;
