@@ -6,29 +6,52 @@
 </head>
 <body>
     <%- include('partials/header') %>
+    <div id="error_message">
 
-    <div class="container mt-4">
-        <form action="/contact" method="post" enctype="application/x-www-form-urlencoded">
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="inputName1">Name:</label>
-                <input type="text" class="form-control" id="inputName1" placeholder="John Doe" name="inputName1">
-              </div>
-              <div class="form-group col-md-6">
-                <label for="inputEmail1">Email:</label>
-                <input type="email" class="form-control" id="inputEmail1" placeholder="johndoe@example.com" name="inputEmail1">
-              </div>
-              <div class="form-group col-md-6">
-                <label for="comment">Comment:</label>
-                <textarea class="form-control" rows="5" id="comment" name="comment"></textarea>
-              </div>
-            </div>
-            <div class="form-row formButton">
-              <button type="submit" class="btn btn-outline-light btn-sm">Contact Brandon</button>
-            </div>
-          </form>
     </div>
+    <div class="container mt-4">
+      <!-- <form action="https://formsubmit.io/send/z3nrider@gmail.com" id="contactform" method="POST">
+        <div class="input_field">
+            <input type="text"
+                  placeholder="Name"
+                  id="name">
+        </div>
+        <div class="input_field">
+            <input type="text"
+                  placeholder="Subject"
+                  id="subject">
+        </div>
+        <div class="input_field">
+            <input type="text"
+                  placeholder="Phone"
+                  id="phone">
+        </div>
+        <div class="input_field">
+            <input type="text"
+                  placeholder="Email"
+                  id="email">
+        </div>
+        <div class="input_field">
+            <textarea placeholder="Message"
+                      id="message">
+            </textarea>
+        </div>
+        <div class="btn">
+            <input type="submit">
+        </div>
+      </form>
+    </div> -->
+    <form id="contactform" action="https://formsubmit.io/send/z3nrider@gmail.com" method="POST">
+      <input name="name" type="text" id="name">
+      <input name="email" type="email" id="email">
+      <textarea name="comment" id="comment" rows="3"></textarea>
 
+      <input name="_formsubmit_id" type="text" style="display:none">
+
+      <input value="Submit" type="submit">
+  </form>
+
+    <script src="/public/js/script.js"></script>
 </body>
 <footer>
   <%- include('partials/footer') %>
