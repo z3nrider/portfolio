@@ -4,7 +4,7 @@ body {
 }
 
 .selfie {
-    width: 150px;
+    max-width: 100px;
     border-radius: 50%;
     border: 1px solid #ddd;
 }
@@ -16,6 +16,7 @@ body {
 
 .contentHeader {
     align-self: center;
+    padding-left: 2em;
 }
 
 .myTable {
@@ -49,4 +50,11 @@ input {
 
 .formButton {
     justify-content: center;
+}
+
+.contactCard {
+    background-color: black;
+    justify-content: center;
+    width: 50%;
+    margin-top: 2em;
 }
